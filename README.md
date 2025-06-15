@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install python3 python3-pip python3-numpy portaudio19-dev
 pip3 install -r requirements.txt
 
-
+```
 ## Разрешения
 
 Добавьте пользователя в группу spi, если нужно:
@@ -49,7 +49,7 @@ DEFAULT_COLOR = 200,80,10
 ```bash
 curl -X POST -H "Content-Type: application/json" \
      -d '{"mode": "candle"}' http://localhost:5000/set_mode
-
+```
 Сервис systemd
 
 sudo cp led_service.service /etc/systemd/system/
