@@ -50,9 +50,11 @@ DEFAULT_COLOR = 200,80,10
 curl -X POST -H "Content-Type: application/json" \
      -d '{"mode": "candle"}' http://localhost:5000/set_mode
 ```
-Сервис systemd
+## Сервис systemd
 
+```bash
 sudo cp led_service.service /etc/systemd/system/
 sudo systemctl daemon-reexec
 sudo systemctl enable led_service
 sudo systemctl start led_service
+```
