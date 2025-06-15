@@ -7,20 +7,20 @@
 - Python 3.7+
 - Аппаратный SPI
 
-## Установка
+## Установка зависимостей
 
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip python3-numpy portaudio19-dev
 pip3 install -r requirements.txt
-
 ```
+
 ## Разрешения
 
 Добавьте пользователя в группу spi, если нужно:
-
+```bash
 sudo usermod -aG spi $USER
-
+```
 ## Конфигурация
 
 Файл: /etc/prokhor/led_service.conf
