@@ -1,0 +1,14 @@
+[Unit]
+Description=LED Service for WS2812B on Orange Pi
+After=network.target sound.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/led_service/led_service.py
+Restart=always
+User=root
+Group=spi
+WorkingDirectory=/opt/led_service
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
