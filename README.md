@@ -47,8 +47,12 @@ sudo usermod -aG spi $USER
 
 ## Пример:
 ```bash
-curl -X POST -H "Content-Type: application/json" \
-     -d '{"mode": "candle"}' http://localhost:5000/set_mode
+curl -X POST -H "Content-Type: application/json" -d '{"mode": "candle"}' http://localhost:5000/set_mode
+curl -X POST -H "Content-Type: application/json" -d '{"mode":"spinner"}' http://localhost:5000/set_mode
+curl -X POST -H "Content-Type: application/json" -d '{"mode":"visualizer"}'http://localhost:5000/set_mode
+curl -X POST -H "Content-Type: application/json" -d '{"r":50,"g":160,"b":70}' http://localhost:5000/set_color
+curl -X POST http://localhost:5000/visualizer -H "Content-Type: application/json" -d '{"volume":"24"}'
+
 ```
 ## Сервис systemd
 
