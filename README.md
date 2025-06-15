@@ -27,15 +27,15 @@ sudo usermod -aG spi $USER
 
 Создаётся автоматически при первом запуске:
 
-[DEFAULT]
-LED_COUNT = 24
-BRIGHTNESS = 0.3
-SPI_DEV_PATH = /dev/spidev1.1
-SPI_SPEED_HZ = 2400000
-SERVER_HOST = 0.0.0.0
-SERVER_PORT = 5000
-DEFAULT_MODE = spinner
-DEFAULT_COLOR = 200,80,10
+    [DEFAULT]
+    LED_COUNT = 24
+    BRIGHTNESS = 0.3
+    SPI_DEV_PATH = /dev/spidev1.1
+    SPI_SPEED_HZ = 2400000
+    SERVER_HOST = 0.0.0.0
+    SERVER_PORT = 5000
+    DEFAULT_MODE = spinner
+    DEFAULT_COLOR = 200,80,10
 
 ## API
 
